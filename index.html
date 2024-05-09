@@ -4,31 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon-194x194.png"
+      sizes="32x32"
+    />
     <title>Goldsmiths Clone</title>
   </head>
   <body>
     <!-- NavBar section -->
-    <nav class="bg-neutral-100 py-6 px-12">
-      <div class="flex justify-between">
-
-        <img src="img/logo.svg" alt="logo" />
-  
-        <img src="img/charm-menu-staff-students.svg" alt="staff icon">
+    <nav class="bg-neutral-100 py-6 px-12 flex">
+      <div class="flex gap-7 justify-between w-full">
+        <div>
+          <img src="img/logo.svg" alt="logo" />
+        </div>
+        <div class="flex gap-5 text-stone-600 font-bold text-base">
+            <div class="flex gap-2 px-3 hover:bg-stone-900 hover:text-yellow-500">
+              <a href="#"><img class="text-4xl" src="img/graduation-cap-line (1).svg" alt=""></a>
+              <h3 class="hover:text-yellow-500" >Students & staff</h3>
+            </div>
+            <div class="flex gap-2 px-3 hover:bg-stone-900 hover:text-yellow-500">
+              <a href="#"><img class="fill-yellow-500" src="img/search-line.svg" alt=""></a>
+              <h3 class="hover:text-yellow-500">Search</h3>
+            </div>
+            <div class="flex gap-2 px-3 hover:bg-stone-900 hover:text-yellow-500">
+              <a href="#"><img class="fill-yellow-500" src="img/charm-menu.svg" alt=""></a>
+              <h3 class="hover:text-yellow-500">Menu</h3>
+            </div>
+        </div>
       </div>
-      
     </nav>
 
     <!-- Hero Section -->
     <section>
       <div class="container mx-auto flex">
         <div
-          class="w-1/2 bg-orange-600 px-44 py-28 pr-6 bg-cover bg-center"
-          style="background-image: url('img/outline.png')" >
-          <h1 class="font-extrabold text-white text-7xl">__</h1>
-          <h1 class="text-white text-6xl font-semibold pt-4">
+          class="w-1/2 bg-[#FF580D] px-44 py-28 pr-6 bg-cover bg-center"
+          style="background-image: url('img/outline.png')"
+        >
+          <div class="bg-white w-10 h-1"></div>
+          <h1 class="text-white text-6xl font-semibold font-arial pt-4">
             Dynamic <br />learning,
           </h1>
-          <p class="text-white font-serif text-5xl pb-5">
+          <p class="text-white font-arial text-6xl pb-5">
             distinctive <br />experience
           </p>
           <button
@@ -47,38 +66,100 @@
       </div>
     </section>
 
-    <!-- 2rd Section -->
-    <section class="pt-20 bg-neutral-100 px-12">
-      <div class="grid grid-cols-4 grid-rows-2 row-auto gap-6">
-        <div class="col-span-2 relative">
-          <img class="" src="img/Students-outside-the-CCA_19427.jpeg" alt="students" />
-        </div>
-        <div class="border h-64 text-center font-serif">
-          <h1 class="font-bold text-2xl">Study at Goldsmiths</h1>
-          <p>Explore our guide to studying at Goldsmiths</p>
-        </div>
-        <div class="bg-white border text-center">
-          <h1 class="font-bold text-2xl">Goldsmiths University of London</h1>
-          <p>
-            With world-leading research and high-quality teaching, we offer
+    <!-- 3rd section -->
+    <section>
+      <div class="container mx-auto pt-20 px-12 bg-neutral-100">
+        <div class="grid grid-cols-2 gap-6">
+          <div class="grid grid-rows-2 gap-4 ">
+            <div class="relative ">
+                <img
+                  class="bg-cover bg-center"
+                  src="img/Students-outside-the-CCA_19427.jpeg"
+                  alt="students"
+                />
+              
+              <div class="bg-white absolute h-full -bottom-80 left-2 right-2 border shadow-2xl flex flex-shrink flex-col">
+                <h1 class="font-bold text-2xl text-center pt-8">Live like a local</h1>
+
+                <p class="text-center text-lg px-12 relative pt-4">
+                  Find out more about life on our campus, including accommodation
+                  information and local area hints and tips.
+                </p>
+                
+                <div class="absolute w-full bottom-8 px-12 font-sans"> 
+                  <div class="bg-slate-300 h-[0.2px]"></div>
+                  <div class="flex justify-between pt-[.75rem] px-4 ">
+                    <a class="text-blue-600 font-semibold text-sm hover:text-amber-900" href="#">Discover more about life on campus</a>
+                    <img src="img/arrow.svg" alt="arrow icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-rows-2 gap-6">
+            <div class="grid grid-cols-2 w-full gap-6">
+              <div class="bg-white relative border shadow 2xl flex flex-col">
+                <h1 class="font-bold text-xl font-serif text-center px-2 pt-8">Study at Goldsmiths</h1>
+
+                <p class="text-center text-base px-12 relative pt-4">
+                  Explore our guide to studying at Goldsmiths
+                </p>
+                
+                <div class="absolute w-full bottom-8 px-8 font-sans"> 
+                  <div class="bg-slate-300 h-[0.2px]"></div>
+                  <div class="flex justify-between w-full pt-[.75rem] px-4 ">
+                    <a class="text-blue-600 font-semibold text-sm hover:text-amber-900" href="#">Studying at Goldsmiths</a>
+                    <img src="img/arrow.svg" alt="arrow icon" />
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white relative border -top-28 h-full -bottom-60 px-4 py-4 justify-between shadow-2xl">
+                <h1 class="font-bold text-2xl font-serif text-center pt-8">Goldsmiths, University of London</h1>
+
+                <p class="text-center text-base px-12 relative pt-4">
+                  With world-leading research and high-quality teaching, we offer
             undergraduate and postgraduate degrees in the arts, humanities,
             social sciences, business, and computing from our campus in South
             East London.
-          </p>
-        </div>
-        <div class="bg-white col-span-2 border shadow-2xl">
-          <h1 class="font-bold text-3xl text-center bg-white">Live like a local</h1>
-          <p class="text-center">
-            Find out more about life on our campus, including accommodation
-            information and local area hints and tips.
-          </p>
-          <div class="flex justify-between mb-0">
-            <p>Discover more about life on campus</p>
-            <img src="img/arrow.svg" alt="arrow icon">
+                </p>
+                
+                <div class="absolute w-full bottom-8 px-12 font-sans"> 
+                  <div class="bg-slate-300 h-[0.2px]"></div>
+                  <div class="flex justify-between pt-[.75rem] px-4 ">
+                    <a class="text-blue-600 font-semibold text-sm hover:text-amber-900" href="#">About Goldsmiths</a>
+                    <img src="img/arrow.svg" alt="arrow icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative bg-cover bg-center -top-9"
+              style="
+                background-image: url('img/Scholarship_homepage.jpeg');
+              "
+            >
+              <div
+                class="border absolute bottom-6 -right-2 py-6 px-8 w-72 h-52 bg-white text-center font-sans"
+              >
+                <div class="pt-2 pb-14 relative">
+                  <h2 class="font-semibold font-sans text-center text-lg">
+                    Explore our range of scholarships, bursaries and fee waivers that can help support your studies
+                  </h2>
+                </div>
+                <div class="absolute w-4/5 bottom-4 font-sans">
+                  <div class="bg-slate-300 h-[0.2px]"></div>
+                  <div
+                    class="flex justify-between text-blue-600 hover:text-amber-900 pt-2"
+                  >
+                    <a class="text-sm font-semibold" href="#">Scholarship finder</a>
+                    <img src="img/arrow.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="bg-purple-500 col-span-2 h-80">
-          <img src="img/Scholarship_homepage.jpeg" alt="scholarship pic" />
         </div>
       </div>
     </section>
@@ -86,41 +167,177 @@
     <!-- 3rd Section -->
     <section class="bg-neutral-100 pt-20 px-12 w-full">
       <div class="flex">
-        <img class="px-12" src="img/search.svg" alt="">
-        <h2 class="px-8 font-bold text-2xl">Search:</h2>
-      </div>
-
-      <div class="flex gap-4 text-xl">
-        <div>
-          <input type="radio" checked="checked">
-          <label class="">Degrees</label>
-        </div>
-        <div>
-          <input type="radio">
-          <label class="">Website</label>
-        </div>
+        <img class="" src="img/search.svg" alt="" />
+        <h2 class="font-bold px-8 font-sans text-stone-700 text-xl">Search:</h2>
       </div>
       
-      <div class="pt-4">
-        <form id="searchForm" role="search">
-          <input class="px-96 py-4 border border-black" type="search" id="searchQuery" name="q" placeholder="">
-          <button class="bg-yellow-400 border border-b-zinc-900 border-b-4 px-16 py-4" type="submit">Search</button>
-        </form>
+      <div class="px-20">
+        <div class="flex gap-4 text-xl font-semibold text-stone-800">
+          <div>
+            <input class="text-stone-800" type="radio" checked="checked" />
+            <label class="">Degrees</label>
+          </div>
+          <div>
+            <input type="radio" />
+            <label class="">Website</label>
+          </div>
+        </div>
+        
+        <div class="pt-4">
+          <form class="flex justify between gap-3" id="searchForm" role="search">
+            <input
+            class="px-[360px] py-4 border border-black"
+            type="search"
+            id="searchQuery"
+            name="q"
+            placeholder=""
+            />
+            <button
+            class="bg-yellow-400 border border-b-zinc-900 border-b-4 px-14 py-4"
+            type="submit"
+            >
+            Search
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
     <!-- 4th Section -->
     <section class="pt-20 px-12 bg-neutral-100">
       <div class="grid grid-cols-4 grid-rows-2 gap-6">
-        <div class="col-span-2">
-          <img src="img/VRLatham.jpeg" alt="purple image" />
+        <div
+          class="col-span-2 relative bg-cover bg-center pb-0"
+          style="background-image: url('img/VRLatham.jpeg')"
+        >
+          <div
+            class="border absolute bottom-6 -right-2 py-8 px-8 bg-white text-center font-sans"
+          >
+            <div class="pt-2 pb-14 relative">
+              <h3 class="font-semibold">
+                Research which changes <br />the world
+              </h3>
+            </div>
+            <div class="absolute w-4/5 bottom-8 font-sans">
+              <div class="bg-slate-400 h-[0.2px]"></div>
+              <div
+                class="flex justify-between text-blue-600 hover:text-amber-900 pt-4"
+              >
+                <a class="text-sm font-semibold" href="#">Case Studies</a>
+                <img src="img/arrow.svg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="bg-red-500">Item 2</div>
-        <div class="bg-green-500">Item 3</div>
-        <div class="bg-yellow-500">Item 4</div>
-        <div class="bg-teal-300">Item 5</div>
-        <div class="col-span-2">
-            <img class="object-cover" src="img/Class-of-2016_-Graduation-2016_10686-s.jpeg" alt="graduation photo">
+        <div class="bg-neutral-100">
+          <div class="grid grid-rows-2 gap-3">
+            <!-- edited section -->
+            <div class="relative ">
+              <img class="bg-cover bg-center" src="img/Annie-Mac-edit.jpeg" alt=""/>
+            
+              <div class="bg-white absolute  -bottom-36 left-2 right-2 border shadow-2xl">
+                <p class="text-center text-base font-bold px-12 relative pt-4">
+                  Research shapes House of Commons Women and Equalities Commmittee
+                  report on misogyn in music
+                </p>
+                
+                <div class="absolute w-full bottom-8 px-12 font-sans"> 
+                  <div class="bg-slate-300 h-[0.2px]"></div>
+                  <div class="flex justify-between pt-[.75rem] px-4 ">
+                    <a class="text-blue-600 font-semibold text-sm hover:text-amber-900" href="#">Misogyny in music</a>
+                    <img src="img/arrow.svg" alt="arrow icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of edited section -->
+          </div>
+        </div>
+        <div class="bg-neutral-100">
+          <div class="grid grid-rows-2 gap-3">
+            <div>
+              <img src="img/Daniel-and-John-edit.jpeg" alt="" />
+            </div>
+            <div class="bg-white border shadow-2xl">
+              <h4 class="font-bold font-serif text-center pb-8">
+                Major funding for a ground-breaking initiative aimed at
+                redefining our understanding of hearing
+              </h4>
+
+              <a
+                class="text-blue-600 hover:text-amber-900 flex justify-between border border-t-4 px-6 pb-4"
+                href="#"
+                >£2.2 million funding <img src="img/arrow.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-neutral-100">
+          <div class="bg-neutral-100">
+            <div class="grid grid-rows-2 gap-3">
+              <div>
+                <img src="img/matt-connors-960.jpeg" alt="" />
+              </div>
+              <div class="bg-white border shadow-2xl">
+                <h4 class="font-bold font-serif text-center pb-8">
+                  Finding Aid, featuring new and existing paintings by Matt
+                  Connors and invited artists
+                </h4>
+
+                <a
+                  class="text-blue-600 hover:text-amber-900 flex justify-between border border-t-4 px-6 pb-4"
+                  href="#"
+                  >Goldsmithds CCA<img src="img/arrow.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-neutral-100">
+          <div class="grid grid-rows-2 gap-3">
+            <div>
+              <img src="img/Untitled-1_0001_DSC07057.jpeg" alt="" />
+            </div>
+            <div class="bg-white border shadow-2xl">
+              <h4 class="font-bold font-serif text-center pb-8">
+                Reflect on Lewisham’s hidden histories, uncovered as part of In
+                Living Memory
+              </h4>
+              <a
+                class="text-blue-600 hover:text-amber-900 flex justify-between border border-t-4 px-6 pb-4"
+                href="#"
+                >In Living Memory<img src="img/arrow.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-span-2 relative bg-cover bg-center pb-0 hover:grayscale-0"
+          style="
+            background-image: url('img/Class-of-2016_-Graduation-2016_10686-s.jpeg');
+          "
+        >
+          <div
+            class="border absolute bottom-6 -right-2 py-8 px-8 w-72 bg-white text-center font-sans"
+          >
+            <div class="pt-2 pb-14 relative">
+              <h3 class="font-semibold text-center">
+                Join our alumni community for exclusive benefits and
+                opportunities
+              </h3>
+            </div>
+            <div class="absolute w-4/5 bottom-8 font-sans">
+              <div class="bg-slate-400 h-[0.2px]"></div>
+              <div
+                class="flex justify-between text-blue-600 hover:text-amber-900 pt-4"
+              >
+                <a class="text-sm font-semibold" href="#">Keep in touch</a>
+                <img src="img/arrow.svg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -128,42 +345,60 @@
     <!-- 5th Section -->
     <section>
       <div class="container mx-auto px-12 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="bg-white p-6 text-center">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-5">
+          <div class="bg-white text-center">
             <img
               src="img/Siddhesh-edit.jpeg"
               alt="Image 1"
               class="w-full h-48 object-cover"
             />
-            <h3 class="text-lg font-semibold mb-2 text-blue-700 hover:text-red-950">Scholar awarded prestigious grant for research in India</h3>
+            <h3
+              class="text-base font-semibold mb-2 text-blue-700 hover:text-red-950"
+            >
+              Scholar awarded prestigious grant for research in India
+            </h3>
             <p class="text-gray-600">18 Apr 2024</p>
           </div>
-          <div class="bg-white text-center p-6">
+          <div class="bg-white text-center">
             <img
               src="img/Jane-Dabate-edit.jpeg"
               alt="Image 2"
               class="w-full h-48 object-cover mb-4"
             />
-            <h3 class="text-xl font-semibold mb-2 text-blue-700 hover:text-red-950">Jane Dabate wins Pat Kavanagh Prize 2024</h3>
+            <h3
+              class="text-base font-semibold mb-2 text-blue-700 hover:text-red-950"
+            >
+              Jane Dabate wins Pat Kavanagh Prize 2024
+            </h3>
             <p class="text-gray-600">27 Mar 2024</p>
           </div>
-          <div class="bg-white text-center p-6">
+
+          <div class="bg-white text-center">
             <img
               src="img/image.jpeg"
               alt="Image 3"
               class="w-full h-48 object-cover mb-4"
             />
-            <h3 class="text-xl font-semibold mb-2 text-blue-700 hover:text-red-950">History in Focus: The Evolution of Cameras and Photography</h3>
+            <h3
+              class="text-base font-semibold mb-2 text-blue-700 hover:text-red-950"
+            >
+              History in Focus: The Evolution of Cameras and Photography
+            </h3>
             <p class="text-gray-600">Exhibition</p>
             <p class="text-gray-600">6 May 2024, 9:00am - 9:00pm</p>
           </div>
-          <div class="bg-white text-center p-6">
+          <div class="bg-white text-center">
             <img
               src="img/image (1).jpeg"
               alt="Image 4"
               class="w-full h-48 object-cover mb-4"
             />
-            <h3 class="text-xl font-semibold mb-2 text-blue-700 hover:text-red-950">LGBTQ+ Positive Voices @ Goldsmiths Exhibition</h3>
+            <h3
+              class="text-base font-semibold mb-2 text-blue-700 hover:text-red-950"
+            >
+              LGBTQ+ Positive Voices @ Goldsmiths Exhibition
+            </h3>
+            <img src="img/icon-calendar-999.svg" alt="">
             <p class="text-gray-600">Exhibition</p>
             <p class="text-gray-600">7 May 2024, 10:00am - 5:00pm</p>
           </div>
@@ -172,35 +407,44 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-zinc-800 pt-10 pb-10 px-12 text-serif">
-      <div class=" text-white flex justify-between list-none ">
-          <ul class="text-bold">
-            <li>About us</li>
-            <li>Contact us</li>
-            <li>Find us</li>
-            <li>Jobs</li>
-          </ul>
-          <ul>
-            <li>Accessibility Statement</li>
-            <li>Cookie use</li>
-            <li>Copyright and disclaimer</li>
-            <li>Slavery and human trafficking statement</li>
-          </ul>
+    <footer class="bg-[#333333] pt-10 pb-10 px-12 mx-auto">
+      <div class="text-white sm:flex lg:flex justify-between gap-10 list-none flex-wrap">
         <ul>
-          <li>Admin Login</li>
+          <li class="hover:text-yellow-500 font-semibold font-sans">About us</li>
+          <li class="hover:text-yellow-500 font-semibold font-sans">Contact us</li>
+          <li class="hover:text-yellow-500 font-semibold font-sans">Find us</li>
+          <li class="hover:text-yellow-500 font-semibold font-sans">Jobs</li>
         </ul>
-        
-        <ul class="social-hubs social-hubs--footer flex gap-2">
-          <li><a href="#"><img src="img/twitter.svg" alt=""></a> </li>
-          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-          <li><a href="#">TikTok</a> </li>
-          <li><a href="#">Instagram</a> </li>
-          <li><a href="#">YouTube</a></li>
+        <ul>
+          <li class="hover:text-yellow-500 font-semibold font-sans">Accessibility Statement</li>
+          <li class="hover:text-yellow-500 font-semibold font-sans">Cookie use</li>
+          <li class="hover:text-yellow-500 font-semibold font-sans">Copyright and disclaimer</li>
+          <li class="hover:text-yellow-500 font-semibold font-sans">Slavery and human trafficking statement</li>
         </ul>
-          
-      </div>
-      <h3 class="text-gray-300 font-bold font-serif text-xs pt-3">@ 2024 Goldsmiths, University of London</h3>
-    </footer>
+        <ul>
+          <div class="bg-white w-5 h-0.5"></div>
+          <li class="font-semibold font-sans">Admin Login</li>
+        </ul>
 
+        <ul class="flex gap-4">
+          <li>
+            <a href="#"><img src="img/twitter-x-line.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/linkedin-fill.svg" alt=""></i></a>
+          </li>
+          <li><a href="#"><img src="img/tiktok-fill.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/instagram-line.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/youtube-fill.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="flex justify-between">
+        <h3 class="text-stone-300 font-bold font-sans text-xs pt-10">
+          @ 2024 Goldsmiths, University of London
+        </h3>
+        <li class="text-stone-300 list-none font-bold font-sans text-xs pt-10 hover:text-yellow-600">Back to top</li>
+      </div>
+      
+    </footer>
   </body>
 </html>
